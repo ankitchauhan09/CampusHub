@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatRoomIndividual"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="35dp"
+    android:paddingTop="25dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="25dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/roomName"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="Room Name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/roomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/anonymous_pro"
+            android:gravity="center"
+            android:text="RoomId"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/roomNumberOfParticipant"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|end"
+        android:paddingEnd="10dp"
+        android:text="memberCount"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="10sp" />
+</LinearLayout>

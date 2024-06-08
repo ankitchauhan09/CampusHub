@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_toolBar_sidebar"
+        android:icon="@drawable/home_bottom_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/community_chat_toolBar_sidebar"
+        android:icon="@drawable/community_chat_bottom_icon"
+        android:title="Community Rooms"
+        />
+    <item
+        android:id="@+id/live_classes_toolBar_sidebar"
+        android:icon="@drawable/live_class_bottom_icon"
+        android:title="Live Classes" />
+    <item
+        android:id="@+id/profile_toolBar_sidebar"
+        android:icon="@drawable/profile_bottom_icon"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/logout_button"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+
+</menu>

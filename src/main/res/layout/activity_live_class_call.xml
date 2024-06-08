@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.call.LiveClassCallActivity">
+
+
+    <FrameLayout
+        android:id="@+id/remoteViewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#c1c1c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/application_theme_background_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/liveClassChatText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/liveClassChatSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message_icon" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/liveClassWidgetFrame"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_above="@id/linearLayout"
+        android:layout_below="@id/remoteViewFrame">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/liveChatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

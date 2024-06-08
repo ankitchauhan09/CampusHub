@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.students.UpdateProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/headerLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/updateProfileBackButton"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/black_left_arrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updateProfileStudentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerLinearLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="40dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/avatar_default"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Student Name"
+                    android:id="@+id/studentNameLabelView"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="student course"
+                    android:id="@+id/studentCourseLabelView"
+                    android:textColor="#797979"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateProfileStudentCard"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/updateFirstNameTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:elevation="3dp"
+                    android:hint="What's your first name?"
+                    android:padding="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/updateLastNameTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:elevation="3dp"
+                    android:hint="And your last name? "
+                    android:padding="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/updateContactTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:hint="What's your contact?"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:drawableEnd="@drawable/calendar_logo"
+                    android:id="@+id/updateDobTextField"
+                    android:elevation="3dp"
+                    android:inputType="none"
+                    android:hint="What's your DOB?"
+                    android:padding="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp"
+                    android:focusable="false"/>
+
+                <EditText
+                    android:id="@+id/updateUniversityNameTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:hint="What's your University?"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/updateCollegeNameTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:hint="What's your University?"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="2323"
+                    android:shadowRadius="12"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="16dp" />
+
+
+                <Spinner
+                    android:id="@+id/updateCourseSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:padding="10dp"
+                    android:elevation="3dp"
+                    android:outlineAmbientShadowColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/updateCourseSession"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/edit_text_bg_white"
+                    android:padding="10dp"
+                    android:elevation="3dp"
+                    android:outlineAmbientShadowColor="@color/black"/>
+
+
+                <Button
+                    android:id="@+id/profileUpdateConfirmButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Update"
+                    android:backgroundTint="@color/application_theme_background_blue"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
