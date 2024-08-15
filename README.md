@@ -18,4 +18,17 @@ CampusHub is a comprehensive campus management application designed to streamlin
 - **Google Drive API**: Integrated for large file storage and seamless access to shared notes and materials.
 - **Lottie Animations**: Enhanced user experience with engaging animations in UI components.
 
-![CampusHub Screenshot](https://drive.google.com/file/d/1IiMxv4c30tUOt3DiKMsoxcw7RyQYIHVY/view?usp=sharing)
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="images/img1.jpg" alt="CampusHub Screenshot 1" width="150" height="300"/></td>
+      <td><img src="images/img2.jpg" alt="CampusHub Screenshot 2" width="150" height="300"/></td>
+    </tr>
+    <tr>
+      <td><img src="images/img3.jpg" alt="CampusHub Screenshot 3" width="150" height="300"/></td>
+      <td><img src="images/img4.jpg" alt="CampusHub Screenshot 4" width="150" height="300"/></td>
+    </tr>
+  </table>
+</div>
